@@ -15,19 +15,19 @@
                 <label for="nombres">
                     Nombres 
                 </label>
-                <input type="text" placeholder="Ingrese su Nombre" id="nombres">
+                <input type="text" placeholder="Ingrese su Nombre" id="nombres" name="nombres" required minlength="3" maxlength="20" pattern="[A-Z a-z]+">
                     <br> <br>
 
                 <label for="apellidos">
                     Apellidos
                 </label>
-                <input type="text" placeholder="Ingrese su Apellido" id="apellidos">
+                <input type="text" placeholder="Ingrese su Apellido" id="apellidos"  required pattern="[A-Z a-z]{1,20}">
                    <br> <br>
 
                 <label for="correo">
                     Email
                 </label>
-                <input type="email" placeholder="Ingrese su e-mail" id="correo">
+                <input type="email" placeholder="Ingrese su e-mail" id="correo" required pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}.">
                    <br> <br>
 
                 <label for="pwd">
@@ -39,7 +39,7 @@
                 <label for="edad">
                     Edad    
                 </label>
-                <input type="number" placeholder="Ingresa tu Edad" id="edad">
+                <input type="number" placeholder="Ingresa tu Edad" id="edad" min="0" max="120">
                 <br> <br>
 
                 <label>
