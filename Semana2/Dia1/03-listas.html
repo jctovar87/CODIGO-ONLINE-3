@@ -5,15 +5,27 @@
     <title>Trabajando con Listas</title>
     <style>
         header {
-            background-color: blueviolet;
-            border: 4px solid green;
+            background-color: orange;
+            border: 4px solid honeydew;
             text-align: center;
+            color: honeydew;
         }
         main{
-            background-color: chartreuse;
+            /* background-color: chartreuse; */
+         display: flex;   
+       }
+       section{
+           /* background-color: honeydew; */
+           /* align-items: center; */
+           width: 100%;   
+           border: 10px;    
+           
         }
         footer{
-            background-color: coral;
+            background-color: honeydew;
+        }
+        #section2  {
+            
         }
         #titulo-ceviche{
             background-color: orange;
@@ -27,7 +39,9 @@
 </head>
 <body>
     <header>
-        <h1>Listas</h1>
+        <section>
+            <h1>Listas</h1>
+        </section>
     </header>
     <main>
         <section>
@@ -45,9 +59,10 @@
                 <li>Choclo</li>
                 <li>Cancha</li>
             </ul>
+            <br>
         </section>
 
-        <section>
+        <section id="section2">
             <h2>Listas Ordenadas</h2>
             <h3>Peliculas</h3>
             <ol>
@@ -60,10 +75,24 @@
                 <li>El duende Maldito</li>
                 <li>Interstelar</li>
             </ol>
+            <br>
+        </section>
+        <section >
+            <h2>Listas centradas</h2>
+            <h3>Colores</h3>
+            <ul>
+                <li>verde</li>
+                <li>azul</li>
+                <li>amarillo</li>
+                <li>blanco</li>
+                <li>celeste</li>
+                <li>rojo</li>
+            </ul>
         </section>
     </main>
+    <br>
     <footer>
-        <hr>
+        <hr >
         <p>Desarrollado por Juan Carlos Tovar</p>
     </footer>
 </body>
