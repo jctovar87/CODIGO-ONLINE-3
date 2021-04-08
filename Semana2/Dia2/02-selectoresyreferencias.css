@@ -1,0 +1,90 @@
+/* etiqueta, class, #id */
+article, h1{
+    background-color: steelblue;
+}
+/* Todos lso hijos (article) que tenganlos section a cualquier nivel */
+section article{
+    color: lightgray;
+}
+/* Al indicar > solamente usa los primeros hijos de LI dentro de OL */
+ol > li {
+    font-family: Arial;
+    color: red;
+}
+
+ol > ul > li{
+    font-family: verdana;
+    color: orange;
+}
+
+.seccion1 > h2 {
+    color: teal;
+}
+
+#caja > span {
+    background-color: yellow;
+}
+
+h2{
+    /* !important solo usar en caso de mucha necesidad */
+    color: tomato !important;
+}
+
+h2.adicional{
+    background-color: skyblue;
+}
+
+.adicional{
+    font-family: Impact;
+}
+
+p[name="instrucciones"]{
+    font-style: italic;
+    color: green;
+}
+
+input[placeholder]{
+    background-color: yellowgreen;
+}
+/* Solo pinta en firefox */
+input:placeholder-shown{
+    color: blue;
+}
+/* PSEUDOCLASES */
+p:nth-child(3){
+    font-style: italic;
+    font-weight: bold;
+    color: peru;
+}
+
+p:last-child{
+    border: 2px solid orangered;
+}
+/* Impares */
+tr:nth-child(odd){
+    background-color: salmon;
+}
+/* Pares */
+tr:nth-child(even){
+    background-color: skyblue;
+}
+/* Para las lineas 3 y 4 */
+tr:nth-child(3), tr:nth-child(4){
+    background-color: palegreen;
+}
+/* Clase para tablas */
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/* Pseudo elementos */
+#principal::first-letter{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* Poner un guion "-" ante o despues de los menus */
+li::before{
+    color: purple;
+    content: "-";
+}
