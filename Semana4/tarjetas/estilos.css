@@ -1,0 +1,89 @@
+*{
+    border:0;
+    /* border: 1px solid green; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cards{
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;   
+    /* flex-wrap: wrap; */
+
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.card_imagen{
+    width: 100%;
+    height: 60%;
+    /* Oculta la parte de la imagen que sobrepasa las medidas del div */
+    overflow: hidden;
+    /* Para que card_fotos este posicionado en la parte baja de la iomagen */
+    position: relative;
+
+}
+
+.card_imagen > img{
+    width: 100%;
+    /* Mover la imagen 60px para arriba */
+    transform: translate(0, -60px);
+
+}
+
+.card_fotos{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    border-top-right-radius: 4px;
+
+}
+
+.card_fecha{
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    background-color: orangered;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.card_info{
+    padding: 20px;
+    height: 40%;
+}
+
+.card_subtitulo{
+    color: orangered;
+    margin-top: 4px;
+}
+
+.card_descripcion{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    /* Propiedad que no afecta al DOM, oculta al texto */
+    /* visibility: hidden; */
+    /* Acepta valores de 0 a 1 */
+    opacity: 0.5;
+
+}

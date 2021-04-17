@@ -1,0 +1,54 @@
+*{
+    border:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #nave{
+    width: 150px;
+} */
+
+/* #nave:hover { */
+#nave{
+    width: 250px;
+    animation-name: mi_animacion;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    /* para que siga la animacion  */
+    animation-iteration-count: infinite;
+    /* Para cambiar el orden del movimiento */
+    /* animation-direction: reverse; */
+}
+
+@keyframes mi_animacion {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(700px,0);
+    }
+    30%{
+        transform: translate(700px,0) rotate(90deg);
+    }
+    50%{
+        transform: translate(700px,600px) rotate(90deg);
+    }
+    63%{
+        transform: translate(700px,600px) rotate(180deg);
+    }
+    75%{
+        transform: translate(0px,600px) rotate(180deg);
+    }
+    89%{
+        transform: translate(0,600px) rotate(270deg);
+    }
+    95%{
+        transform: translate(0,0px) rotate(270deg);
+
+    }
+    100%{
+        transform: translate(0,0px) rotate(360deg);
+    }
+}
