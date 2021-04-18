@@ -200,7 +200,7 @@
     z-index: -99;
   }
 
-
+  
 
 
   @media screen  and (max-width: 600px) {
@@ -254,10 +254,11 @@
       display: block;
     }
     /* Checked verifica si marcado el elemento checkbox */
+    /* ~ Este simbolo hace referencia a los elementos que esten despues del #CHECK en la estructura, en este caso menu */
     #check:checked ~ .menu{
       right:0;
     }
-    
+
 
   }
 
