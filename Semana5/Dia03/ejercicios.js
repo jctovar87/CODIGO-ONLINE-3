@@ -22,13 +22,12 @@ console.log(precioHamburguesa)
 
 escogeCantidad = +prompt("Ahora indique cuantas Hamburguesas va a desear")
 total = escogeCantidad * precioHamburguesa
-console.log(`En total son ${escogeCantidad} hamburguesas del tipo ${tipoHamburguesa} y seria un total de S/. ${total} soles`)
+console.log(`El total es ${escogeCantidad} hamburguesas del tipo ${tipoHamburguesa} y seria un total de S/. ${total} soles`)
     
 } else{
 
     prompt("Ingrese un tipo valido de HAMBURGUESA")     
     
-
 }
 
 
