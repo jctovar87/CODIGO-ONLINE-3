@@ -12,3 +12,7 @@ console.log(`redondeado ${random10y50.toFixed(1)}`)
 console.log(`Pi: ${Math.PI}`)
 
 console.log(`Euler: ${Math.E}`)
+
+
+
+ 
