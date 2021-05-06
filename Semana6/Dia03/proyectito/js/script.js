@@ -76,6 +76,8 @@ listaPlatillos.forEach(function(plato){
 
 divContenido.innerHTML = htmlTarjetas;
 
+let 
+
 // Obtenemos los btns-agregar, despues que cambiamos el innerHTML de divContenido con las tarjetas para que esas tarjetas esten en el DOM
 
 // Obtenemos un HTML COLLECTION, que lo podemos tratar como un arreglo
@@ -89,6 +91,7 @@ arrayBotonesAgregar.forEach(function(boton){
   
     let idPlato = evento.target.getAttribute("data-idplato")
   
+
     console.log(idPlato)
   })
 })
