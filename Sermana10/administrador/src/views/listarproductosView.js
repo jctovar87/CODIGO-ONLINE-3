@@ -1,28 +1,32 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from "react"
 import {obtenerProductos} from "../services/productoServices"
 
 function ListarProductosView(){
-    const [productos, setProductos] = userState([])
+    const [productos, setProductos] = useState([]);
 
-    const getProductos = () = > {
+    const getProductos=async () => {
         try{
-            const productosObtenidos = await obtenerProductos (
+                const productosObtenidos = await obtenerProductos ()
                 setProductos(productosObtenidos)
-            )
+            
         } catch (error) {
             console.log(error)
         }
 
-    }
+    };
+
+    useEffect(() => {
+        getProductos();
+    }, []);
 
     return (
 
         <div>
-
-            <table>
+            <h1>Productos Listados</h1>
+            <table className="table">
                 <thead>
                     <tr>
-                        <th>nombre</th>
+                        <th>Nombre</th>
                         <th>Precio</th>
                         <th>Descripcion</th>
                         <th>Stock</th>
@@ -30,7 +34,7 @@ function ListarProductosView(){
                     </tr>
                 </thead>
                 <tbody>
-                                {productos.map((prod, i) => (
+                    {productos.map((prod, i) => (
                         <tr key={i}>
                             <td>{prod.nombre}</td>
                             <td>{prod.precio}</td>
@@ -38,11 +42,10 @@ function ListarProductosView(){
                             <td>{prod.stock}</td>
                             <td></td>
                         </tr>
-            
                                     
-                                ))}
+                    ))}
             
-                    </tbody>
+                </tbody>
             </table>
         </div>
     )
